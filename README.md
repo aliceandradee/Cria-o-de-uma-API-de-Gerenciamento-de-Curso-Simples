@@ -20,7 +20,7 @@ O projeto utiliza uma arquitetura em camadas para garantir que cada parte do có
 | Pastas 📂 | Classes ⚙️ |
 | :--- | :--- |
 | **Controllers:** Essa pasta funciona como a porta de entrada da API, sendo responsável por gerenciar as rotas e receber as requisições HTTP do usuário. | **APICursoController.cs** Onde ocorre a tratativa de erro sendo aplicada para validar os nomes e garantir que não haja duplicidade. |
-| **Services:** Nessa pasta é onde centraliza as funções que não pertencem diretamente ao acesso a dados ou à interface.. | **CursoService:**  Sendo respons´vael por organizar o fluxo de informações. |
+| **Services:** Nessa pasta é onde centraliza as funções que não pertencem diretamente ao acesso a dados ou à interface. | **CursoService:**  Sendo respons´vael por organizar o fluxo de informações. |
 | **Repositories:** Sendo responsável por abstrair a complexidade do Entity Framework e pelas consultas no SQL. | **CursoRepository:** O método que verifica se um nome já existe antes de permitir a persistência dos dados. |
 | **Interface:** Onde define quais métodos uma classe deve obrigatoriamente implementar. | **IPCursoRepository:** Garante que todos os serviços de persistência sigam o mesmo padrão de segurança. |
 | **Models:** Permite atualizar ou corrigir lógicas na classe Visitor sem mexer na estrutura estável dos objetos. | **Curso:** Se os tipos de objetos mudam muito, o padrão gera um alto custo de atualização. |
@@ -102,7 +102,6 @@ Para dar início ao projeto, logo após criar a API que foi feita no NET SDK 8.0
 
 Para conectar um banco de dados minha API é de extrema importância que os dados persistem, onde as informações que forem criadas, listadas, atualizadas ou excluidas o CRUD sendo assim permite que essas informações não sejam perdidas quando o usuário fechar a aplicação. Os comandos utilizados foram todos em EntityFramework, sendo executados os seguintes comandos no terminal do Visual Studio.
 
----
 #### 1º comando utilizado no terminal:
 
 - Como não tinha as EntityFramework instaladas precisei utilizar esse comando abaico que foi o responsável por conseguir executar o dotnet-ef, sem essa instalação irá dar erro, pois o terminal irá reconhecer que esse pacote não está instalado e não conseguiria executar a pasta "migrations" e "database".
@@ -129,4 +128,17 @@ Para conectar um banco de dados minha API é de extrema importância que os dado
 <img src="imagens/comando3.jpeg" alt="Descrição" width="800"/>
 </div>
 <br>
----
+
+## Métodos presentes na interface - (GET, POST, PUT, DELETE)
+- GET -> Obtem os dados;
+- POST -> Criação de um novo dado;
+- PUT -> Atualizar um dado; - o que essa API trata
+- DELETE -> Apagar um dado.
+Esta camada/inteface tem como objetivo servir como um guia prático para os serviços de gerenciamento de cursos.
+
+| Metódos 📝 | Funcionalidade 💻 |
+| :--- | :--- |
+| **GET** | Este método é responsável por listar todos os cursos que já foram cadastrados. Ele realiza consultas assíncronas no repositório para retornar os dados, garantindo uma resposta rápida e eficiente para o usuário. |
+| **POST** | É onde permite o cadastro de novos cursos, antes de salvar, o sistema valida se todos os campos foram preenchidos. |
+| **PUT** | Onde valida se o ID e/ou nome coincide com algum que já foi cadastrado, caso sim aciona a tratativa de erro 500. |
+| **DELETE** | Já esse é utilizado para remover cursos do sistema de forma definitiva a partir do ID correspondente.|
