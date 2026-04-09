@@ -88,3 +88,12 @@ Foi solicitada que a tratativa ocorresse dentro da pasta controller, como mostra
 </div>
 
 ---
+## Pacotes usados e instalados para esse projeto
+
+Para dar início ao projeto, logo após criar a API que foi feita no NET SDK 8.0, na linguagem C#, foi feita a instalação de dois pacotes, sendo eles:
+
+- **Microsoft.EntityFrameworkCore.Sqlite (versão - 9.0.12):** Permite ao Entity Framework se comunicar com o SQLite, um banco de dados leve que dispensa configurações complexas de servidor.
+
+- **Microsoft.EntityFrameworkCore.Tools (versão - 9.0.12):** Conjunto de ferramentas essenciais para executar comandos de Migrations dentro do Console do Gerenciador de Pacotes no Visual Studio.
+
+---
