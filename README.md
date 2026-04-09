@@ -172,3 +172,12 @@ A fase de validação do método PUT foi essencial para comprovar se a tratativa
 </div>
 <br>
 
+#### 3º teste:
+
+- Na imagem abaixo, ao realizar uma requisição PUT onde o ID da URL coincide com o ID do corpo e o novo nome do curso e não apresenta duplicidade com outros registros, sendo assim retorna o status 200 OK.
+
+<div align="center">
+<img src="imagens/terceiro teste.jpeg" alt="Descrição" width="800"/>
+</div>
+
+---
