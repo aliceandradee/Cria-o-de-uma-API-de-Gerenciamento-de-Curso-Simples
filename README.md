@@ -142,3 +142,10 @@ Esta camada/inteface tem como objetivo servir como um guia prático para os serv
 | **POST** | É onde permite o cadastro de novos cursos, antes de salvar, o sistema valida se todos os campos foram preenchidos. |
 | **PUT** | Onde valida se o ID e/ou nome coincide com algum que já foi cadastrado, caso sim aciona a tratativa de erro 500. |
 | **DELETE** | Já esse é utilizado para remover cursos do sistema de forma definitiva a partir do ID correspondente.|
+
+<div align="center">
+<img src="imagens/interface - metodos.png" alt="Descrição" width="800"/>
+</div>
+<br>
+
+---
