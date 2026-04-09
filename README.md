@@ -97,3 +97,7 @@ Para dar início ao projeto, logo após criar a API que foi feita no NET SDK 8.0
 - **Microsoft.EntityFrameworkCore.Tools (versão - 9.0.12):** Conjunto de ferramentas essenciais para executar comandos de Migrations dentro do Console do Gerenciador de Pacotes no Visual Studio.
 
 ---
+
+## Conexão e comandos para o Banco De Dados
+
+Para conectar um banco de dados minha API é de extrema importância que os dados persistem, onde as informações que forem criadas, listadas, atualizadas ou excluidas o CRUD sendo assim permite que essas informações não sejam perdidas quando o usuário fechar a aplicação. Os comandos utilizados foram todos em EntityFramework, sendo executados os seguintes comandos no terminal do Visual Studio.
