@@ -149,3 +149,9 @@ Esta camada/inteface tem como objetivo servir como um guia prático para os serv
 <br>
 
 ---
+
+## Testes de erros no método - PUT
+
+A fase de validação do método PUT foi essencial para comprovar se a tratativa de erro estava funcionando corretamente. Durante os testes, o objetivo principal foi verificar se o sistema identificaria corretamente a tentativa de renomear um curso para um nome já existente, interrompendo a transação antes da persistência e apresentando a mensagem do erro 500. 
+
+#### 1º teste:
