@@ -101,3 +101,32 @@ Para dar início ao projeto, logo após criar a API que foi feita no NET SDK 8.0
 ## Conexão e comandos para o Banco De Dados
 
 Para conectar um banco de dados minha API é de extrema importância que os dados persistem, onde as informações que forem criadas, listadas, atualizadas ou excluidas o CRUD sendo assim permite que essas informações não sejam perdidas quando o usuário fechar a aplicação. Os comandos utilizados foram todos em EntityFramework, sendo executados os seguintes comandos no terminal do Visual Studio.
+
+---
+#### 1º comando utilizado no terminal:
+
+- Como não tinha as EntityFramework instaladas precisei utilizar esse comando abaico que foi o responsável por conseguir executar o dotnet-ef, sem essa instalação irá dar erro, pois o terminal irá reconhecer que esse pacote não está instalado e não conseguiria executar a pasta "migrations" e "database".
+
+<div align="center">
+<img src="imagens/comando1.jpeg" alt="Descrição" width="800"/>
+</div>
+<br>
+
+#### 2º comando utilizado no terminal:
+
+- O comando abaixo atua como o arquiteto do banco de dados, realizando uma varredura completa no projeto para identificar classes que herdam de `DbContext`. Ao detectar a ausência de tabelas para as Models existentes, ele gera automaticamente a pasta Migrations contendo instruções em C# que detalham a criação de cada coluna e restrição.
+
+<div align="center">
+<img src="imagens/comando2.jpeg" alt="Descrição" width="800"/>
+</div>
+<br>
+
+#### 3º comando utilizado no terminal:
+
+- O comando e o último é o passo final que materializa a infraestrutura, lendo a Connection String no appsettings.json e importando para o projeto para localizar ou criar o arquivo físico do banco de dados. Ele traduz os arquivos da pasta Migrations para a linguagem SQL, executando os scripts que estruturam as tabelas e colunas diretamente no disco, sendo assim o arquivo .db é gerado na raiz do projeto e estabelecendo a conexão real.
+
+<div align="center">
+<img src="imagens/comando3.jpeg" alt="Descrição" width="800"/>
+</div>
+<br>
+---
