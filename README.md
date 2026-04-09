@@ -1,5 +1,9 @@
 # Projeto De Criação API Gerenciamento De Cursos
 
+#### Alice Virgília Andrade
+
+#### Orientador: Fred Aguiar
+
 Atividade feito no curso técnico de Desenvolvimento De Sistemas sobre criação de uma API com funcionalidade para gerenciamento de cursos e com funcionalidade de realizar uma tratativa de erros, visando a qualidade 
 e robustez do tratamento de erros e corrigir as falhas que geram no erro 500. Utilizando blocos de tratamentos de exceções (try/catch).
 
@@ -181,3 +185,16 @@ A fase de validação do método PUT foi essencial para comprovar se a tratativa
 </div>
 
 ---
+
+## Entrega Final e Considerações Finais
+
+O meu projeto de API sobre Gerenciamento de Cursos teve como obejtivo de cumprir os requisitos técnicos estabelecidos pelo meu orientador, consolidando uma API robusta e principalmente com a minha tratativa de erro. Sendo assim, concluou que este projeto representa a aplicação prática dos conceitos adquiridos na UC de desenvolvimente de sistema como a arquitetura e organização das pastas, classes e códigos. Além disso, obtive bastantes dificuldades ao decorrer da criação do meu projeto sendo elas:
+
+- Foi de entender a comunicação entre o meu terminal(que executa os comandos responsáveis pelo meu banco de dados).Sendo necessário entender sobre Entity Framework e como transforma comandos de terminal em arquivos físicos de migração e persistência.
+
+- De realizar a tratativa de erro somente na APICursoController, mas consegui identificar que fica de forma mais limpa o código e não corre o risco de acessar o banco sem misturar com outras informações. Usando osv blocos try/catch foi fundamental para capturar exceções e impedir que informações inconsistentes comprometessem a integridade do sistema.
+  
+- Como falei anteriormente da dificuldade na lógica sobre o método PUT, tive que entender melhor como funcionaria a consulta assíncrona que é responsável para a retomada do erro antes da persistência(onde aconteceu de fato a lógica). Foi importante de entender isso, pois ocorre para que a lógica interrompesse a execução no momento exato, retornando o erro tratado antes que qualquer dado atingisse o banco.
+  
+
+#### Escola de Robótica e Programação - SENAI NOVA LIMA
