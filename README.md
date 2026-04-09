@@ -164,3 +164,11 @@ A fase de validação do método PUT foi essencial para comprovar se a tratativa
 <br>
 
 #### 2º teste:
+
+- Na imagem abaixo, tentei atualizar um curso para um nome que já existe em outro registro, a API aciona a lógica da minha classe APICursoController.cs. Retornando a mensagem: "Erro 500: Tentativa de atualizar curso com nome duplicado". 
+
+<div align="center">
+<img src="imagens/segundo teste.jpeg" alt="Descrição" width="800"/>
+</div>
+<br>
+
