@@ -196,5 +196,8 @@ O meu projeto de API sobre Gerenciamento de Cursos teve como obejtivo de cumprir
   
 - Como falei anteriormente da dificuldade na lógica sobre o método PUT, tive que entender melhor como funcionaria a consulta assíncrona que é responsável para a retomada do erro antes da persistência(onde aconteceu de fato a lógica). Foi importante de entender isso, pois ocorre para que a lógica interrompesse a execução no momento exato, retornando o erro tratado antes que qualquer dado atingisse o banco.
   
+<div align="center">
+<img src="imagens/API - gerenciamento de curso.png" alt="Descrição" width="800"/>
+</div>
 
 #### Escola de Robótica e Programação - SENAI NOVA LIMA
