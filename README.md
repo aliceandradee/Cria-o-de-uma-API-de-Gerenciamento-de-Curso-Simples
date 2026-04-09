@@ -78,7 +78,10 @@ Essa tratativa é capaz de validar a integridade dos dados antes mesmo que eles 
 <img src="imagens/APICursoController.jpeg" alt="Descrição" width="800"/>
 </div>
 
-Foi solicitada que a tratativa ocorresse dentro da pasta controller, como mostrada na imagem acima que é uma breve parte do código da minha APICursoController.cs onde vai acontecer a verificação se o novo nome do curso que o usuário deseja atualizar através do PUT já está em uso por outro registro ou não. Caso o nome que o usuário digitar já esteja no meu bacno será detectada, a execução é interrompida com um Erro 500 e aprecendo para o usuário o porque desse erro e onde, como mostra na imagem abaixo.
+---
+Foi solicitada que a tratativa ocorresse dentro da pasta controller, como mostrada na imagem acima que é uma breve parte do código da minha APICursoController.cs onde vai acontecer a verificação se o novo nome do curso que o usuário deseja atualizar através do PUT já está em uso por outro registro ou não. Caso o nome que o usuário digitar já esteja no meu bacno será detectada, a execução é interrompida com um Erro 500 e aprecendo para o usuário o porque desse erro e onde, como mostra na imagem abaixo:
+
+
 
 <div align="center">
 <img src="imagens/Erro 500.png" alt="Descrição" width="800"/>
