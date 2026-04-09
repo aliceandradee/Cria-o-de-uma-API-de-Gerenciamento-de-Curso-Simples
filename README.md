@@ -155,3 +155,12 @@ Esta camada/inteface tem como objetivo servir como um guia prático para os serv
 A fase de validação do método PUT foi essencial para comprovar se a tratativa de erro estava funcionando corretamente. Durante os testes, o objetivo principal foi verificar se o sistema identificaria corretamente a tentativa de renomear um curso para um nome já existente, interrompendo a transação antes da persistência e apresentando a mensagem do erro 500. 
 
 #### 1º teste:
+
+- Na imagem abaixo, tentei atualizar um curso enviando um ID no corpo da requisição diferente do ID especificado na URL, a API interrompe o processo imediatamente. O sistema retorna um Error 400 com a mensagem "IDs não conferem!", garantindo que nenhuma alteração aconteça.
+
+<div align="center">
+<img src="imagens/primeiro teste.jpeg" alt="Descrição" width="800"/>
+</div>
+<br>
+
+#### 2º teste:
